@@ -1,0 +1,94 @@
+body {
+  background-color: #141414;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTekoN28_ypKBpKwHQaaxAji8zjp9MvAaRY5-Vmdsg_eQoSYpcUkMgoXPM&s=10');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0; /* Remove default body margin */
+}
+
+/* Add a semi-transparent overlay for better text readability */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1; /* Place it behind other elements */
+}
+
+/* Rest of your existing styles remain unchanged */
+
+
+header {
+  
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+/* Your existing CSS styles remain unchanged */
+
+/* Style for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV5cfmX_nrwHoG6MJ2u-wu_p43Vv0UEVmLKiE4dhbGZQ&s') no-repeat center center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000000;
+}
+
